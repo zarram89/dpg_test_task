@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* Variables */
 :root {
   --basic-black: #000000;
@@ -14,10 +21,12 @@
 /* Global */
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
+  display: -ms-grid;
   display: grid;
   place-content: center;
   margin: 0 auto;
@@ -47,7 +56,8 @@ img {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -76,9 +86,15 @@ img {
   background-color: #171929;
   padding: 42px;
   border-radius: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  animation: bounce 0.6s;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-animation: bounce 0.6s;
+          animation: bounce 0.6s;
 }
 
 .page__description {
@@ -90,7 +106,9 @@ img {
   margin: 0;
   padding: 0;
   margin-bottom: 10px;
-  align-self:  center;
+  -ms-flex-item-align:  center;
+      -ms-grid-row-align:  center;
+      align-self:  center;
 }
 
 .page__requiered {
