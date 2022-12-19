@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./normalize.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <section class="page">
+    <h1 class="page__header visually-hidden">Form</h1>
+    <p class="page__greeting"></p>
+    <div class="container">
+      <p class="page__description">For business enquiries please use the form below</p>
+      <form class="page__form appeal" action="#" method="post">
+        <p class="appeal__item">
+          <label class="appeal__label" for="appeal-name">Name*</label>
+          <input class="appeal__input" id="appeal-name" type="text" name="login">
+        </p>
+        <p class="appeal__item">
+          <label class="appeal__label" for="appeal-company">Company*</label>
+          <input class="appeal__input" id="appeal-company" type="text" name="company">
+        </p>
+        <p class="appeal__item">
+          <label class="appeal__label" for="appeal-email">Email*</label>
+          <input class="appeal__input" id="appeal-email" type="email" name="email">
+        </p>
+        <p class="appeal__item">
+          <label class="appeal__label" for="appeal-company">Phone*</label>
+          <input class="appeal__input" id="appeal-phone" type="tel" name="phone">
+        </p>
+        <p class="appeal__item">
+          <label class="appeal__label" for="appeal-company">Message*</label>
+          <textarea class="appeal__textarea" name="message" id="appeal-message" cols="30" rows="10"></textarea>
+        </p>
+        <p class="appeal-help">
+          <label class="login-checkbox">
+            <input class="visually-hidden" type="checkbox" name="remember">
+            <span class="checkbox-indicator"></span>
+            I accept <a class="restore" href="#">Terms and Private Policy</a>
+          </label>
+        </p>
+        <button class="button" type="submit">Send</button>
+
+      </form>
+    </div>
+
+  </section>
+</body>
+
+</html>
