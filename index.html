@@ -8,43 +8,44 @@
   <title>Form</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./normalize.css">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
   <section class="page">
     <h1 class="page__header visually-hidden">Form</h1>
-    <p class="page__greeting"></p>
+    <p class="page__greeting">Hello</p>
     <div class="container">
       <p class="page__description">For business enquiries please use the form below</p>
+      <p class="page__requiered"><sup class="super">*</sup>Required</p>
       <form class="page__form appeal" action="#" method="post">
         <p class="appeal__item">
-          <label class="appeal__label" for="appeal-name">Name*</label>
+          <label class="appeal__label" for="appeal-name" required>Name<sup class="super">*</sup></label>
           <input class="appeal__input" id="appeal-name" type="text" name="login">
         </p>
         <p class="appeal__item">
-          <label class="appeal__label" for="appeal-company">Company*</label>
+          <label class="appeal__label" for="appeal-company" required>Company<sup class="super">*</sup></label>
           <input class="appeal__input" id="appeal-company" type="text" name="company">
         </p>
         <p class="appeal__item">
-          <label class="appeal__label" for="appeal-email">Email*</label>
+          <label class="appeal__label" for="appeal-email" required>Email<sup class="super">*</sup></label>
           <input class="appeal__input" id="appeal-email" type="email" name="email">
         </p>
         <p class="appeal__item">
-          <label class="appeal__label" for="appeal-company">Phone*</label>
+          <label class="appeal__label" for="appeal-company">Phone<sup>*</sup></label>
           <input class="appeal__input" id="appeal-phone" type="tel" name="phone">
         </p>
         <p class="appeal__item">
-          <label class="appeal__label" for="appeal-company">Message*</label>
-          <textarea class="appeal__textarea" name="message" id="appeal-message" cols="30" rows="10"></textarea>
+          <label class="appeal__label" for="appeal-company" required>Message<sup class="super">*</sup></label>
+          <textarea class="appeal__textarea" name="message" id="appeal-message" cols="30" rows="2"></textarea>
         </p>
-        <p class="appeal-help">
-          <label class="login-checkbox">
-            <input class="visually-hidden" type="checkbox" name="remember">
+        <p class="appeal-turms">
+          <label class="appeal-checkbox">
+            <input class="visually-hidden" type="checkbox" name="accept" checked>
             <span class="checkbox-indicator"></span>
-            I accept <a class="restore" href="#">Terms and Private Policy</a>
+            I accept <a class="accept-link" href="#">Terms and Private Policy</a>
           </label>
         </p>
         <button class="button" type="submit">Send</button>
